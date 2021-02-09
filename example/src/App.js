@@ -1,10 +1,17 @@
 import React from 'react'
 
-import { ExampleComponent } from 'scio-react-components'
+import './styles/main.scss'
+
+import { InputError } from 'scio-react-components'
 import 'scio-react-components/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <InputError
+    placeholder="Nombre"
+    type="text"
+    error="No se encuentra"/>
+  )
 }
 
 export default App

@@ -1,0 +1,29 @@
+.text-group{
+    margin-bottom: 20px;
+    
+    & input{
+        font-size: 18px;
+        padding: 5px;
+        margin: 0px;
+        display: block;
+    }
+
+    & span{
+        font-size: 15px;
+    }
+
+    &--error{
+        & input{
+            border: 1px solid red;
+            color: red;
+
+            &::placeholder{
+                color: red;
+            }
+        }
+    
+        & span{
+            color: red;
+        }
+    }
+}
